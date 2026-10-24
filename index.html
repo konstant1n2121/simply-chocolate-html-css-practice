@@ -12,33 +12,52 @@
       content="simply chocolate, artisan chocolate, buy chocolate online, dark chocolate bars, milk chocolate, organic sweets, handmade confectionery, chocolate gift sets, gourmet chocolate, cocoa products"
     />
     <link rel="shortcut icon" href="./images/icons/logo.svg" type="xml-svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/main.css" />
     <title>SimplyChocolate</title>
   </head>
   <body>
-    <header id="home">
-      <a href="./index.html"
-        >SIMPLY CHOCOLATE
+    <header class="header" id="home">
+      <a class="logo" href="./index.html"
+        ><i>SIMPLY</i> CHOCOLATE
         <img
+          class="logo-icon"
           src="./images/icons/logo.svg"
           alt="Site logo"
           width="24"
           height="24"
       /></a>
-      <ul>
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#made">How it&#39;s made?</a>
-        </li>
-        <li>
-          <a href="#reviews">Chocolate is loved</a>
-        </li>
-      </ul>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#home">Home</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#made">How it&#39;s made?</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#reviews">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
 
-      <ul>
-        <li>
+      <ul class="socials">
+        <li class="social-items">
           <a
+            class="social-icon"
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -49,8 +68,9 @@
               height="24"
           /></a>
         </li>
-        <li>
+        <li class="social-items">
           <a
+            class="social-icon"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,8 +81,9 @@
               height="24"
           /></a>
         </li>
-        <li>
+        <li class="social-items">
           <a
+            class="social-icon"
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -78,16 +99,19 @@
 
     <main>
       <!-- Hero section -->
-      <section id="hero">
-        <h1>
+      <section class="hero" id="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <button type="button">How it&#39;s made</button>
-        <a href="#made"
+        <button class="btn btn-filled" type="button">Buy now</button>
+        <button class="btn btn-outlined primary" type="button">
+          How it&#39;s made
+        </button>
+        <a class="hero-link" href="#made"
           >Scroll down
           <img
+            class="hero-link-icon"
             src="./images/icons/arrow-down.svg"
             alt="arrow down icon"
             width="22"
@@ -97,21 +121,21 @@
       </section>
 
       <!-- Benefits section -->
-      <section id="benefits">
+      <section class="benefits" id="benefits">
         <h2>Our benefits</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+        <ul class="benefits-list">
+          <li class="benefits-items">
+            <h3 class="benefits-subtitle">Unsurpassed taste</h3>
+            <p class="benefits-desc">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li>
-            <h3>Affordable price</h3>
-            <p>
+          <li class="benefits-items">
+            <h3 class="benefits-subtitle">Affordable price</h3>
+            <p class="benefits-desc">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
@@ -119,9 +143,9 @@
               affordable luxury today.
             </p>
           </li>
-          <li>
-            <h3>Own production</h3>
-            <p>
+          <li class="benefits-items">
+            <h3 class="benefits-subtitle">Own production</h3>
+            <p class="benefits-desc">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -403,7 +427,9 @@
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="btn btn-outlined secondary" type="button">
+          Leave a review
+        </button>
       </section>
     </main>
 
